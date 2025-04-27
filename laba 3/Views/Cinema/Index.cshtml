@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Киностудия";
+}
+
+<h2>Введите данные о киностудии</h2>
+
+<form asp-action="Index" method="post">
+    <div>
+        <label>Идентификатор:</label>
+        <input type="number" name="id" />
+    </div>
+    <div>
+        <label>Название:</label>
+        <input type="text" name="name" />
+    </div>
+    <div>
+        <label>Адрес:</label>
+        <input type="text" name="address" />
+    </div>
+    <div>
+        <label>Наличие проектора:</label>
+        <input type="checkbox" name="hasProjector" />
+    </div>
+    <div>
+        <label>Открыто:</label>
+        <input type="checkbox" name="isOpen" />
+    </div>
+    <div>
+        <label>Контактный Email:</label>
+        <input type="email" name="contactEmail" />
+    </div>
+    <button type="submit">Отправить</button>
+</form>

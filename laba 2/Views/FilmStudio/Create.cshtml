@@ -1,0 +1,37 @@
+@model tp_laba2.Models.FilmStudio
+
+@{
+    ViewData["Title"] = "Добавление киностудии";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.EditorFor(m => m.Name)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.EstablishedYear)
+        @Html.EditorFor(m => m.EstablishedYear)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Country)
+        @Html.EditorFor(m => m.Country)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Phone)
+        @Html.EditorFor(m => m.Phone)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.FilmCount)
+        @Html.EditorFor(m => m.FilmCount)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Description)
+        @Html.EditorFor(m => m.Description)
+    </div>
+    <div class="form-buttons">
+        <button class="btn btn-primary" type="submit">Добавить киностудию</button>
+    </div>
